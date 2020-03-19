@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>NG Container</mat-card-title>
+  </mat-card-header>
+  <br>
+  <mat-card-content>
+    <mat-list>
+      <h3 mat-header>Usuários</h3>
+
+      <ng-container *ngFor="let user of users; let i = index"> <!-- Nesse caso o NG Container agrupa o Mat Divider com o list -->
+        <mat-list-item>
+        <mat-icon matListIcon> account_box </mat-icon>
+          <h4 mat-line> {{user.login}} </h4>
+          <h4 mat-line> {{user.role}} </h4>
+          <h4 mat-line> {{user.lastlogin}} </h4>
+          <button mat-icon-button color="warn" (click)="delete(i)">
+              <mat-icon>delete</mat-icon>
+          </button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+
+      </ng-container>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

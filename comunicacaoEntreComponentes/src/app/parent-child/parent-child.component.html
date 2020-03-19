@@ -1,0 +1,15 @@
+<div>
+  <p>Utilização da Variaveis Template</p>
+  <button mat-button color="primary" (click)="stopwatch.start()"> Start </button>
+  <button mat-button color="warn" (click)="stopwatch.stop()"> Stop </button>
+  <button mat-button color="accent" (click)="stopwatch.clear()"> Clear </button>
+</div>
+<app-timer #stopwatch></app-timer>
+
+
+<div>
+  <p> Utilização de View Child</p>
+  <button mat-button color="primary" (click)="start()"> Start </button>
+  <button mat-button color="warn" (click)="stop()"> Stop </button>
+  <button mat-button color="accent" (click)="clear()"> Clear </button>
+</div>

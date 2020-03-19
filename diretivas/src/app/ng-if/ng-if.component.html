@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-title>
+    Ng If
+  </mat-card-title>
+  <br>
+  <mat-card-content>
+    <p>Selecione os campos necessários:</p>
+    <section class="checkbox-section">
+      <mat-checkbox [(ngModel)]="showNome" name="showNome" class="checkboxItem"> Nome </mat-checkbox>
+      <mat-checkbox [(ngModel)]="showIdade" name="showIdade" class="checkboxItem"> Idade </mat-checkbox>
+      <mat-checkbox [(ngModel)]="showTelefone" name="showTelefone" class="checkboxItem"> Telefone </mat-checkbox>
+      <mat-checkbox [(ngModel)]="showEndereco" name="showEndereco" class="checkboxItem"> Endereço </mat-checkbox>
+    </section>
+
+    <div class="input-section">
+      <form class="input-form">
+        <mat-form-field *ngIf="showNome">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="Nome">
+        </mat-form-field>
+        <mat-form-field *ngIf="showIdade">
+          <mat-label>Idade</mat-label>
+          <input matInput placeholder="Idade">
+        </mat-form-field>
+        <mat-form-field *ngIf="showTelefone">
+          <mat-label>Telefone</mat-label>
+          <input matInput placeholder="Telefone">
+        </mat-form-field>
+        <mat-form-field *ngIf="showEndereco">
+          <mat-label>Endereço</mat-label>
+          <input matInput placeholder="Endereço">
+        </mat-form-field>
+      </form>
+    </div>
+  </mat-card-content>
+  <mat-card-footer>
+    <app-result-if *ngIf="showNome"></app-result-if>
+  </mat-card-footer>
+</mat-card>

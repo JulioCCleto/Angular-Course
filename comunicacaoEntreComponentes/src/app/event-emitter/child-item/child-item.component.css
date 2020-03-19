@@ -1,0 +1,8 @@
+.horizontal-buttons{
+  display: flex;
+  align-items: center;
+}
+
+.mat-raised-button{
+  margin: 5px 10px;
+}

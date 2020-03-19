@@ -1,0 +1,29 @@
+<!-- <p *ngFor="let name of names"> {{name}}</p> -->
+
+<mat-card>
+  <mat-card-title>Ng For</mat-card-title>
+  <br>
+  <mat-card-content>
+    <mat-list class="itens">
+      <h3 matSubheader> Nomes </h3><br>
+      <mat-list-item *ngFor="let name of names">
+        <mat-icon matListIcon class="mat-18">person</mat-icon>
+        <h4 matLine> {{name}} </h4>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+
+      <h3 matSubheader> Doenças </h3><br>
+      <mat-list-item *ngFor="let doenca of disease">
+        <mat-icon matListIcon class="mat-18">two_wheeler</mat-icon>
+        <h4 matLine> {{doenca.name}} </h4>
+        <h4 matLine> {{doenca.apelido}} </h4>
+        <h4 matLine> {{doenca.cientifico}} </h4>
+      </mat-list-item>
+
+
+    </mat-list>
+
+  </mat-card-content>
+
+</mat-card>

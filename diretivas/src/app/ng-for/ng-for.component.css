@@ -1,0 +1,11 @@
+.itens{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1px;
+}
+
+
+.mat-card-footer{
+  padding: 0px 15px;
+  font-size: 16px;
+}

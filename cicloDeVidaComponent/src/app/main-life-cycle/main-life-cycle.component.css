@@ -1,0 +1,14 @@
+.mat-form-field {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.mat-card{
+  width: 45%;
+  }
+
+.buttons {
+  margin-left: 80%;
+  right: 0;
+}

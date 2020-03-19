@@ -1,0 +1,21 @@
+<mat-card class="cardzada">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Person data</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Primeiro Nome: {{usuario.firstname}} </p>
+    <p>Último nome: {{usuario.lastname}} </p>
+    <p>Idade: {{usuario.age}} </p>
+    <p>Endereço: {{usuario.adress}} </p>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Nome" value="{{usuario.firstname}}">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>

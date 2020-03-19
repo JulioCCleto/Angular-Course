@@ -1,0 +1,32 @@
+.mat-card-footer{
+  padding: 0px 15px;
+}
+
+.mat-form-field{
+  padding: 0px 15px;
+}
+
+.mat-card-footer{
+  padding: 0px 15px;
+}
+
+.mat-select{
+  margin: 7.5px;
+}
+
+.myClass1 {
+  font-size: 16px;
+  color: dodgerblue;
+}
+.myClass2 {
+  font-size: 16px;
+  color: purple;
+}
+.myClass3 {
+  font-size: 16px;
+  color: green;
+}
+.myClass4 {
+  font-size: 16px;
+  color: darkred;
+}

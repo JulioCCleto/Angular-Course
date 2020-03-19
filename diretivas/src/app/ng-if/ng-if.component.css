@@ -1,0 +1,19 @@
+.checkboxItem{
+  padding: 10px;
+}
+.checkbox-section{
+  display: grid ;
+  grid-template-columns: 1fr 1fr;
+  padding: 3px;
+  align-items: center;
+}
+.input-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.mat-card-footer{
+  padding: 0px 15px;
+  font-size: 16px;
+}

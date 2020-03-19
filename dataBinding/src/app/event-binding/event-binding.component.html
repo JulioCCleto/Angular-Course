@@ -1,0 +1,42 @@
+<p> Eventos <p>
+
+    <section>
+      <button mat-button color="primary" (click)="habilitar()"> Habilitar</button>
+      <button mat-button color="warn" (click)="increment()"> {{btnNome}} </button>
+    </section>
+
+    <section>
+      <button mat-button color="primary" disabled="{{!btnEnable}}"> Teste 2 </button>
+      <button mat-button color="warn" disabled="{{!btnEnable}}"> Teste 1 </button>
+
+      <button mat-button (click)="disable()"> desabilitar </button>
+
+      <p> Quer ver o Spinner Rodando?
+        <button mat-button color="accent" (click)="verSpinner()"> Clique aqui</button>
+
+        <p class="habilitou"> Ó O SPNINNER RODANDO AI Ó </p>
+        <mat-progress-spinner class="example-margin" color="warn" [mode]="determinate" [value]="0">
+        </mat-progress-spinner>
+    </section>
+
+
+    <section>
+
+       <p> Habilitar/Desabilitar Configurações do Spinner
+        <mat-checkbox color="warn" (change)="cbChange($event)"></mat-checkbox>
+      </p>
+
+      <p>
+        <mat-form-field>
+          <mat-label>Configuração</mat-label>
+          <mat-select matNativeControl required
+            [disabled]="configEnable" (selectionChange)="selectionChange($event)">
+            <mat-option value="1">habilitado</mat-option>
+            <mat-option  value="2">desabilitado</mat-option >
+          </mat-select>
+        </mat-form-field>
+      </p>
+
+      <mat-progress-spinner class="example-margin" color="warn" [mode]="segundodeterminate" [value]="0">
+      </mat-progress-spinner>
+    </section>

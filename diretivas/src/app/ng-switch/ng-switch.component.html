@@ -1,0 +1,26 @@
+<mat-card>
+
+  <mat-card-title>NG Switch</mat-card-title>
+
+
+  <mat-card-content>
+    <section>
+      <br>
+      <p> Selecione o campo necessário: </p>
+      <mat-radio-group class="radioButton" [(ngModel)]="nameField">
+          <mat-radio-button color="warn" value="button"> Button </mat-radio-button>
+          <mat-radio-button color="primary" value="checkBox"> CheckBox </mat-radio-button>
+          <mat-radio-button value="progressBar"> Progress Bar </mat-radio-button>
+      </mat-radio-group>
+    </section>
+    <br>
+
+    <section [ngSwitch]="nameField">
+      <button *ngSwitchCase="'button'" mat-raised-button color="warn"> Button </button>
+      <mat-checkbox color="primary" *ngSwitchCase="'checkBox'"> Checkbox </mat-checkbox>
+      <mat-progress-bar *ngSwitchCase="'progressBar'" color="accent" mode="indeterminate"> </mat-progress-bar>
+    </section>
+
+  </mat-card-content>
+
+</mat-card>

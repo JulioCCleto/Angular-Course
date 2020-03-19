@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-content>
+    <section *ngIf="onEdit">
+      <mat-form-field class="inputs">
+        <input matInput placeholder="Nome" [(ngModel)]="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="idade" type="number" [(ngModel)]="age">
+      </mat-form-field>
+      <button class="check-button" mat-mini-fab color="primary" (click)="save() ">
+        <mat-icon> check </mat-icon>
+      </button>
+    </section>
+
+    <section *ngIf="!onEdit">
+      {{client.name}} / {{client.age}}
+      <button mat-icon-button color="primary" (click)="edit()">
+        <mat-icon> edit </mat-icon>
+      </button>
+
+      <button mat-icon-button color="warn" (click)="remove()">
+        <mat-icon> delete </mat-icon>
+      </button>
+
+    </section>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,18 @@
+.radioButton {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px;
+}
+
+.mat-card-footer{
+  padding: 0px 15px;
+}
+
+.mat-form-field{
+  padding: 0px 15px;
+}
+
+.mat-card-footer{
+  padding: 0px 15px;
+}
+
