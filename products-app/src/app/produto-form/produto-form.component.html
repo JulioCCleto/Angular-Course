@@ -1,0 +1,42 @@
+<div fxLayoutAlign="center center" style="margin: 30px;">
+<mat-card fxFlex="60%" style="border: none">
+  <mat-card-header class="cabecalho">
+    <mat-card-title>
+      Cadastrar Produto
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div>
+    <mat-form-field fxFlex="100%">
+      <input matInput placeholder="Nome do Produto" [(ngModel)]="name">
+    </mat-form-field>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="space-between start">
+    <mat-form-field fxFlex="60">
+      <mat-select placeholder="Departamento"  [(ngModel)]="department">
+        <mat-option *ngFor='let dep of departments' [value]="dep">{{dep.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field fxFlex="30">
+      <input matInput placeholder="Valor" type=""  [(ngModel)]="price">
+      <span matPrefix>R$&nbsp;</span>
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field fxFlex="100%">
+      <input matInput placeholder="Descrição do Produto" [(ngModel)]="description">
+    </mat-form-field>
+  </div>
+  </mat-card-content>
+
+  <mat-card-actions  fxLayout="row" fxLayoutAlign="end">
+    <button mat-button color="primary" (click)="save()">Cadastrar</button>
+    <button mat-button color="warn" (click)="clear()">Limpar</button>
+  </mat-card-actions>
+
+</mat-card>
+</div>
