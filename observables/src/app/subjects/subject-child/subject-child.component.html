@@ -1,0 +1,10 @@
+<div class="box">
+    <h4> {{name}}</h4>
+    <button (click)="connect()" *ngif="!connected"> Connect </button>
+    <button (click)="disconnect()" *ngif="connected"> Disconnect </button>
+    <br>
+    <hr>
+    <div>
+        <p *ngFor="let s of log"> {{s}} </p>
+    </div>
+</div>
