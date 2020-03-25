@@ -40,6 +40,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BasicComponent } from './basic/basic.component';
 import { OperatorsComponent } from './operators/operators.component';
 import { AsyncComponent } from './async/async.component';
+import { ErrorHandlingComponent } from './error-handling/error-handling.component';
+import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
+import { UnsubscribeComponent } from './unsubscribe/unsubscribe.component';
+import { SwitchMergeComponent } from './switch-merge/switch-merge.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -47,6 +52,10 @@ import { AsyncComponent } from './async/async.component';
     BasicComponent,
     OperatorsComponent,
     AsyncComponent,
+    ErrorHandlingComponent,
+    DragAndDropComponent,
+    UnsubscribeComponent,
+    SwitchMergeComponent,
     
   ],
   imports: [
@@ -88,6 +97,8 @@ import { AsyncComponent } from './async/async.component';
     MatPaginatorModule,
 
     FlexLayoutModule,
+
+    HttpClientModule,
 
   ],
   providers: [],
